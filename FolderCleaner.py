@@ -31,7 +31,7 @@ class MyHandler(FileSystemEventHandler):
                 file_exists = os.path.isfile(folder_destination_path + "/" + new_name)
             src = folder_to_track + "/" + filename
 
-            new_name = folder_destination_path + "/"+ filename
+            new_name = folder_destination_path + "/"+ new_name
             os.rename(src,new_name)
 
 extensions_folders = {
