@@ -23,15 +23,16 @@ class MyHandler(FileSystemEventHandler):
 
             for folder_name in os.listdir(extensions_folders[extension]):
                 file_exists=os.path.isfile(folder_destination_path +"/"+new_name)
-                while file_exists:
-                    i += 1
-                    new_name = os.path.splitext(folder_to_track + '/' + filename)[0] + str(i) + os.path.splitext(folder_to_track + '/' + filename)[1]
-                    new_name = new_name.split("/")[4]
-                    file_exists = os.path.isfile(folder_destination_path + "/" + new_name)
-                src = folder_to_track + "/" + filename
+            
+            while file_exists:
+                i += 1
+                new_name = os.path.splitext(folder_to_track + '/' + filename)[0] + str(i) + os.path.splitext(folder_to_track + '/' + filename)[1]
+                new_name = new_name.split("/")[4]
+                file_exists = os.path.isfile(folder_destination_path + "/" + new_name)
+            src = folder_to_track + "/" + filename
 
-                new_name = folder_destination_path + "/"+ filename
-                os.rename(src,new_name)
+            new_name = folder_destination_path + "/"+ filename
+            os.rename(src,new_name)
 
 extensions_folders = {
 #No name
@@ -61,6 +62,7 @@ extensions_folders = {
     '.tif': "/Users/techn/Downloads/Images",
     '.tiff': "/Users/techn/Downloads/Images",
     '.CR2': "/Users/techn/Downloads/Images",
+    '.jfif': "/Users/techn/Downloads/Images",
 
 #Compressed
     '.7z': "/Users/kalle/Desktop/kalle/Other/Compressed",
