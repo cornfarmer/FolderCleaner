@@ -18,12 +18,12 @@ class MyHandler(FileSystemEventHandler):
                 path = extensions_folders[extension]
             except Exception:
                 extension = 'noname'
-
+            
             folder_destination_path = extensions_folders[extension]
 
             for folder_name in os.listdir(extensions_folders[extension]):
                 file_exists=os.path.isfile(folder_destination_path +"/"+new_name)
-            
+
             while file_exists:
                 i += 1
                 new_name = os.path.splitext(folder_to_track + '/' + filename)[0] + str(i) + os.path.splitext(folder_to_track + '/' + filename)[1]
@@ -37,6 +37,8 @@ class MyHandler(FileSystemEventHandler):
 extensions_folders = {
 #No name
     'noname': "/Users/techn/Downloads",
+#Apps
+    '.exe': "/Users/techn/Downloads/Apps",
 #Text
     '.txt' : "/Users/techn/Downloads/Text",
     '.doc' : "/Users/techn/Downloads/Text",
