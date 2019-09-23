@@ -67,15 +67,15 @@ extensions_folders = {
     '.jfif': "/Users/techn/Downloads/Images",
 
 #Compressed
-    '.7z': "/Users/kalle/Desktop/kalle/Other/Compressed",
-    '.arj': "/Users/kalle/Desktop/kalle/Other/Compressed",
-    '.deb': "/Users/kalle/Desktop/kalle/Other/Compressed",
-    '.pkg': "/Users/kalle/Desktop/kalle/Other/Compressed",
-    '.rar': "/Users/kalle/Desktop/kalle/Other/Compressed",
-    '.rpm': "/Users/kalle/Desktop/kalle/Other/Compressed",
-    '.tar.gz': "/Users/kalle/Desktop/kalle/Other/Compressed",
-    '.z': "/Users/kalle/Desktop/kalle/Other/Compressed",
-    '.zip': "/Users/kalle/Desktop/kalle/Other/Compressed",
+    '.7z': "/Users/techn/Downloads/Compressed",
+    '.arj': "/Users/techn/Downloads/Compressed",
+    '.deb':"/Users/techn/Downloads/Compressed",
+    '.pkg': "/Users/techn/Downloads/Compressed",
+    '.rar': "/Users/techn/Downloads/Compressed",
+    '.rpm': "/Users/techn/Downloads/Compressed",
+    '.tar.gz': "/Users/techn/Downloads/Compressed",
+    '.z': "/Users/techn/Downloads/Compressed",
+    '.zip': "/Users/techn/Downloads/Compressed",
 
 #Presentations
     '.key': "/Users/techn/Downloads/Presentations",
